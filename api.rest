@@ -1,3 +1,37 @@
 ###
-GET  http://localhost:3000
+GET  http://localhost:3000/api/usuarios
 
+
+###
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+{
+    "nombre": "Pedro",
+    "password": "12345",
+    "email": "pedro3@gmail.com"
+}
+
+###
+PUT  http://localhost:3000/api/usuarios/5fe11b58baa7b2f314b99be4
+Content-Type: application/json
+
+{
+    "nombre": "Jose",
+    "password": "12345",
+    "google": true,
+    "email": "jose@gmail.com"
+}
+
+
+###
+DELETE http://localhost:3000/api/usuarios/5fe11b58baa7b2f314b99be4
+
+###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "password": "12345",
+    "email": "jose2@gmail.com"
+}
