@@ -1,5 +1,5 @@
 ###
-GET  http://localhost:3000/api/usuarios
+GET  http://localhost:3000/api/medicos
 
 
 ###
@@ -9,7 +9,7 @@ Content-Type: application/json
 {
     "nombre": "Pedro",
     "password": "12345",
-    "email": "pedro3@gmail.com"
+    "email": "pedro4@gmail.com"
 }
 
 ###
@@ -35,3 +35,37 @@ Content-Type: application/json
     "password": "12345",
     "email": "jose2@gmail.com"
 }
+
+
+
+
+
+
+###
+GET  http://localhost:3000/api/usuarios
+
+
+###
+POST http://localhost:3000/api/hospitales
+Content-Type: application/json
+
+{
+    "nombre": "Pedro",
+    "password": "12345",
+    "email": "pedro3@gmail.com"
+}
+
+###
+PUT  http://localhost:3000/api/hospitales/5fe11b58baa7b2f314b99be4
+Content-Type: application/json
+
+{
+    "nombre": "Jose",
+    "password": "12345",
+    "google": true,
+    "email": "jose@gmail.com"
+}
+
+
+###
+DELETE http://localhost:3000/api/hospitales/5fe11b58baa7b2f314b99be4
