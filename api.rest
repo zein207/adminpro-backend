@@ -28,12 +28,12 @@ Content-Type: application/json
 DELETE http://localhost:3000/api/usuarios/5fe11b58baa7b2f314b99be4
 
 ###
-POST http://localhost:3000/api/login
+POST https://adminpro-angular-nodejs.herokuapp.com/api/login
 Content-Type: application/json
 
 {
     "password": "12345",
-    "email": "jose2@gmail.com"
+    "email": "david@gmail.com"
 }
 
 
